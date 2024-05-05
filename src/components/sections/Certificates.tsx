@@ -34,30 +34,30 @@ const CertificateCard: React.FC<ICertificateCard> = ({ index,
     glareColor="#aaa6c3"
   >
     <Link to={designation} target="_blank" rel="noopener noreferrer">
-      <div className="xs:w-[355px] w-full" >
-        <motion.div
-          variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-          className="green-pink-gradient shadow-card w-full rounded-[20px] p-[1px]"
-        >
-          <div className="bg-tertiary flex min-h-[320px] flex-col items-center justify-evenly rounded-[20px] px-12 py-5">
-            <img
-              src={image}
-              alt="certificate"
-              className="h-48 w-96"
-            />
+    <div className="xs:w-[355px] w-full" >
+      <motion.div
+        variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+        className="green-pink-gradient shadow-card w-full rounded-[20px] p-[1px]"
+      >
+        <div className="bg-tertiary flex min-h-[320px] flex-col items-center justify-evenly rounded-[20px] px-12 py-5">
+          <img
+            src={image}
+            alt="certificate"
+            className="h-48 w-96"
+          />
 
-            <h3 className="text-center text-[20px] font-bold text-white">
-              {name}
-            </h3>
-            <h2 className="text-center text-[16px] font-bold text-white">
-              {testimonial}
-            </h2>
-            <h2 className="text-center text-[16px] font-bold text-white">
-              {company}
-            </h2>
-          </div>
-        </motion.div>
-      </div>
+          <h3 className="text-center text-[20px] font-bold text-white">
+            {name}
+          </h3>
+          <h2 className="text-center text-[16px] font-bold text-white">
+            {testimonial}
+          </h2>
+          <h2 className="text-center text-[16px] font-bold text-white">
+            {company}
+          </h2>
+        </div>
+      </motion.div>
+    </div>
     </Link>
   </Tilt>
 );
